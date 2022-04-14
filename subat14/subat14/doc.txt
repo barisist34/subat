@@ -1,0 +1,23 @@
+
+
+runserver : web uygulamasını lokal host üstünden yayınlar
+createsuperuser 
+makemigrations : migrate tablolarını oluşturur
+migrate: oluşan migrate dosyalarını database tablosuna ekler
+startapp : yeni uygulama oluşturur
+
+django-admin startproject projeismi : proje oluşturur
+
+ARAŞTIRMA:
+db ilişkileri : mant to many
+many to one
+one to many
+one to one
+
+
+extends : html dosyasını miras alır
+block : parçalana dosyadaki güncellemeler
+
+
+extends : 
+include : farklı bir dosyayı içindekilerle olduğu gibi aktarma

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Toplam Ürün Sayısı: {{urun_sayisi}}</b>
+    {% for i in urunler %} <!--dinamik url-->
+    <p>Ürün ID: {{i.id}}</p>
+    <p>Ürün Adı: {{i.urun_adi}}</p>
+    <p>Fiyatı: {{i.urun_fiyat}} TL</p>
+    <p>Urun Kategorisi: {{i.kategori}}</p>
+    <p>Detay: {{i.detay}}</p>
+
+        {% if i.resim %}
+        <img src="{{i.resim.url}}" alt="" >
+    {% else %}
+        <p>Resim Yok</p>
+    {% endif %}
+
+{% endfor %}
+</body>
+</html>
